@@ -16,12 +16,12 @@ export const products: Product[] = [
         name: 'Fatali Salsa',
         description: 'This is a sample product for our demo store. featuring Fatali Salsa',
         price: 9.99,
-        imageURL: Pepper,
+        imageURL: Salsa,
       },
       {
         name: 'Pesto',
         description: 'This is a sample product for our demo store. featuring Pesto',
         price: 7.99,
-        imageURL: Pepper,
+        imageURL: Pesto,
       }
 ];

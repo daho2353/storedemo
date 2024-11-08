@@ -1,9 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
+import ProductCard from "./ProductCard";
+import { products } from './data';
+
 
 function App() {
   return(
-    <div></div>
+    <div className='store-page'>
+          {products.map(product => (
+      <ProductCard product={product} />
+    ))}
+    </div>
   );
 }
 
