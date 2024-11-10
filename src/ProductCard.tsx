@@ -4,9 +4,10 @@ import { Product } from "./types"
 
 interface Props {
     product: Product;
+    addToCart: () => void;
 }
 
-const ProductCard: React.FC<Props> = ({ product })  => (
+const ProductCard: React.FC<Props> = ({ product ,addToCart })  => (
 /*    const stripe = useStripe();
 
     const handleCheckout = async () => {
@@ -28,7 +29,7 @@ const ProductCard: React.FC<Props> = ({ product })  => (
         <p className="product-name">{product.name}</p>
         <p className="product-price">{product.price.toFixed(2)}</p>
         <p className="product-description">{product.description}</p>
-        <button> Add to Cart </button>
+        <button onClick={addToCart}> Add to Cart </button>
     </div>
 )
 
